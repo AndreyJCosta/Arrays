@@ -5,13 +5,13 @@
 #(3) quantos dos valores do vetor são maiores que a média desses valores:
 
 
-valor=[" "]*5
+valor=[" "]*30
 valorMaior=0
 valorMenor=0
 soma=0
-pares=[" "]*5
+pares=[" "]*30
 
-for x in range(5):
+for x in range(30):
     valor[x]=int(input(f"Digite o {x + 1}º valor: "))
     if x == 0:
         valorMenor = valor[x]
@@ -23,20 +23,20 @@ for x in range(5):
     if valor[x] < valorMenor:
         valorMenor=valor[x]
 
-media=soma/5
+media=soma/30
 cont=0
 
-for a in range (5):
+for a in range (30):
     if valor[a] > media:
         cont+=1
 
-for b in range (5):
+for b in range (30):
     if valor[b] % 2 ==0:
         pares[b]=valor[b]
 
 print()
 print(f"Os numeros pares são: ")
-for c in range (5):
+for c in range (30):
     print(pares[c], end=" ")
 print()
 print(f" O menor de todo é o --> {valorMenor}.\n\o/\n"
